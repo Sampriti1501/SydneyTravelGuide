@@ -14,7 +14,7 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body { font-family:'DM Sans',sans-serif; background:var(--purple-deep); color:var(--white); overflow-x:hidden; }
-
+ 
   /* HERO */
   .hero { min-height:100vh; position:relative; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; overflow:hidden; background:radial-gradient(ellipse at 65% 10%,#391B5C 0%,#1B1030 50%,#0B362E 100%); padding:40px 24px 80px; }
   .orb { position:absolute; border-radius:50%; pointer-events:none; }
@@ -26,7 +26,7 @@
   .hero h1 em { font-style:italic; color:var(--teal-bright); }
   .hero h1 .muted { color:rgba(255,255,255,.28); }
   .hero-desc { font-size:clamp(15px,1.8vw,18px); font-weight:300; color:rgba(255,255,255,.58); margin-top:28px; max-width:480px; line-height:1.75; position:relative; z-index:1; animation:riseUp .9s cubic-bezier(.16,1,.3,1) .15s both; }
-
+ 
   /* MONTH PICKER */
   .month-picker-wrap { position:relative; z-index:1; margin-top:44px; text-align:center; animation:riseUp .9s cubic-bezier(.16,1,.3,1) .3s both; }
   .month-picker-label { font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:rgba(255,255,255,.4); font-weight:600; margin-bottom:16px; }
@@ -48,7 +48,7 @@
   @keyframes drip { 0%{transform:scaleY(0);transform-origin:top} 50%{transform:scaleY(1);transform-origin:top} 51%{transform-origin:bottom} 100%{transform:scaleY(0);transform-origin:bottom} }
   @keyframes riseUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:none} }
   @keyframes fadeIn { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:none} }
-
+ 
   /* SEASON BANNER */
   .context-banner { display:none; padding:56px 0; text-align:center; background:linear-gradient(135deg,#0B362E 0%,#1B1030 55%,#391B5C 100%); position:relative; overflow:hidden; }
   .context-banner.visible { display:block; }
@@ -62,7 +62,7 @@
   .weather-chips { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:24px; }
   .weather-chip { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); border-radius:100px; padding:7px 16px; font-size:12px; color:rgba(255,255,255,.65); }
   .weather-chip strong { color:var(--teal-pale); font-weight:600; }
-
+ 
   /* NAV */
   nav { position:sticky; top:0; z-index:100; background:rgba(27,16,48,.9); backdrop-filter:blur(20px); border-bottom:1px solid rgba(255,255,255,.06); padding:0 40px; display:flex; align-items:center; justify-content:space-between; height:60px; }
   .nav-brand { font-family:'Playfair Display',serif; font-size:17px; font-weight:700; color:var(--gold); text-decoration:none; }
@@ -71,7 +71,7 @@
   .nav-links a { color:rgba(255,255,255,.5); text-decoration:none; font-size:12px; font-weight:500; letter-spacing:.4px; transition:color .2s; }
   .nav-links a:hover { color:var(--gold); }
   .nav-highlight { color:var(--gold) !important; }
-
+ 
   /* LAYOUT */
   .container { max-width:1200px; margin:0 auto; padding:0 40px; }
   section.sec { padding:100px 0; }
@@ -80,11 +80,11 @@
   .sec-title { font-family:'Playfair Display',serif; font-size:clamp(34px,5vw,56px); font-weight:700; line-height:1.1; margin-bottom:14px; }
   .sec-title em { font-style:italic; color:var(--teal-bright); }
   .sec-sub { font-size:15.5px; font-weight:300; color:rgba(255,255,255,.5); line-height:1.85; max-width:540px; margin-bottom:52px; }
-
+ 
   /* SEASON NOTES */
   .season-note { display:none; align-items:center; gap:8px; padding:8px 16px; border-radius:100px; font-size:12px; font-weight:600; margin-bottom:20px; width:fit-content; border:1px solid; }
   .season-note.visible { display:inline-flex; }
-
+ 
   /* CARDS */
   .grid-3 { display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:20px; }
   .grid-2 { display:grid; grid-template-columns:repeat(auto-fill,minmax(440px,1fr)); gap:20px; }
@@ -102,7 +102,7 @@
   .card-name { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; margin-bottom:10px; line-height:1.2; }
   .card-meta { margin-bottom:12px; display:flex; flex-direction:column; gap:4px; }
   .card-meta span { font-size:12px; color:var(--teal-pale); line-height:1.5; }
-
+ 
   /* COLLAPSIBLE */
   .card-snippet { font-size:14px; color:rgba(255,255,255,.62); line-height:1.75; }
   .card-snippet strong { color:rgba(255,255,255,.85); font-weight:500; }
@@ -117,7 +117,7 @@
   .card-text strong { color:rgba(255,255,255,.85); font-weight:500; }
   .tip-box { background:rgba(245,197,24,.07); border:1px solid rgba(245,197,24,.18); border-radius:10px; padding:11px 14px; font-size:12.5px; color:rgba(245,197,24,.82); line-height:1.65; }
   .tip-box strong { color:var(--gold); }
-
+ 
   /* WALK CARDS */
   .walks-stack { display:flex; flex-direction:column; gap:18px; }
   .walk-card { display:flex; border-radius:20px; overflow:hidden; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); transition:transform .3s,box-shadow .3s; }
@@ -133,7 +133,7 @@
   .walk-stats { display:flex; gap:18px; margin-bottom:12px; flex-wrap:wrap; }
   .walk-stat { font-size:12px; color:var(--teal-pale); }
   .walk-stat span { color:rgba(255,255,255,.75); font-weight:600; }
-
+ 
   /* TIPS */
   .tips-shell { background:linear-gradient(135deg,rgba(26,127,108,.1) 0%,rgba(57,27,92,.18) 100%); border:1px solid rgba(58,148,131,.18); border-radius:24px; padding:48px 44px; }
   .tips-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:28px; margin-top:32px; }
@@ -142,10 +142,10 @@
   .tip-copy h4 { font-size:13px; font-weight:600; margin-bottom:5px; }
   .tip-copy p { font-size:12.5px; color:rgba(255,255,255,.48); line-height:1.7; }
   .tip-copy p strong { color:rgba(255,255,255,.72); font-weight:500; }
-
+ 
   /* DIVIDER */
   .divider { height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,.09),transparent); max-width:1200px; margin:0 auto; }
-
+ 
   /* IMMERSION SECTION */
   .immersion-section { background:linear-gradient(160deg,#0D2820 0%,#1B1030 45%,#261045 100%); padding:100px 0; position:relative; overflow:hidden; }
   .immersion-section::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 85% 15%,rgba(245,197,24,.05) 0%,transparent 55%),radial-gradient(ellipse at 10% 85%,rgba(58,148,131,.07) 0%,transparent 50%); pointer-events:none; }
@@ -153,7 +153,7 @@
   .immersion-welcome-emoji { font-size:36px; flex-shrink:0; line-height:1; margin-top:2px; }
   .immersion-welcome p { font-size:15px; color:rgba(255,255,255,.7); line-height:1.85; font-weight:300; }
   .immersion-welcome p strong { color:var(--gold); font-weight:600; }
-
+ 
   .info-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
   .info-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.09); border-radius:18px; overflow:hidden; transition:border-color .2s,transform .2s; }
   .info-card:hover { border-color:rgba(255,255,255,.18); transform:translateY(-3px); }
@@ -173,7 +173,7 @@
   .info-card-body li a:hover { color:var(--teal-bright); text-decoration:underline; }
   .info-card-note { margin-top:12px; padding:9px 12px; border-radius:8px; font-size:12px; line-height:1.6; background:rgba(245,197,24,.07); border:1px solid rgba(245,197,24,.17); color:rgba(245,197,24,.8); }
   .info-card-note strong { color:var(--gold); }
-
+ 
   .pack-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.09); border-radius:18px; overflow:hidden; margin-top:18px; }
   .pack-card-head { padding:18px 20px 14px; display:flex; align-items:center; gap:12px; border-bottom:1px solid rgba(255,255,255,.07); }
   .pack-grid { display:grid; grid-template-columns:repeat(4,1fr); }
@@ -183,15 +183,15 @@
   .pack-group ul { list-style:none; display:flex; flex-direction:column; gap:7px; }
   .pack-group li { font-size:12.5px; color:rgba(255,255,255,.55); display:flex; gap:8px; align-items:flex-start; }
   .pack-group li::before { content:'✓'; color:var(--teal-bright); font-size:10px; font-weight:700; margin-top:3px; flex-shrink:0; }
-
+ 
   /* FOOTER */
   footer { background:#0D0A18; border-top:1px solid rgba(255,255,255,.05); padding:40px; text-align:center; color:rgba(255,255,255,.28); font-size:13px; }
   footer strong { color:var(--gold); font-weight:600; }
-
+ 
   /* REVEAL */
   .reveal { opacity:0; transform:translateY(26px); transition:opacity .7s ease,transform .7s ease; }
   .reveal.in { opacity:1; transform:none; }
-
+ 
   /* RESPONSIVE */
   @media (max-width:1000px) { .info-grid { grid-template-columns:repeat(2,1fr); } }
   @media (max-width:720px) {
@@ -214,7 +214,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- HERO -->
 <div class="hero">
   <div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
@@ -237,7 +237,7 @@
   </div>
   <div class="scroll-indicator"><div class="scroll-bar"></div>scroll</div>
 </div>
-
+ 
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-brand">Resonate <span>· Sydney Guide</span></a>
@@ -247,7 +247,7 @@
     <li><a href="#tips">Tips</a></li><li><a href="#immersion" class="nav-highlight">Immersion Program</a></li>
   </ul>
 </nav>
-
+ 
 <!-- SEASON BANNER -->
 <div class="context-banner" id="contextBanner" data-emoji="🌞">
   <div class="context-inner">
@@ -257,7 +257,7 @@
     <div class="weather-chips" id="contextChips"></div>
   </div>
 </div>
-
+ 
 <!-- WALKS -->
 <section class="sec" id="walks">
   <div class="container">
@@ -266,7 +266,7 @@
     <div id="walksNote" class="season-note reveal"></div>
     <p class="sec-sub reveal">Sydney's coastline is one of the most dramatic in the world — clifftop paths, hidden beaches, and harbour views that will genuinely stop you in your tracks.</p>
     <div class="walks-stack">
-
+ 
       <div class="walk-card reveal">
         <div class="walk-side ws-teal"></div>
         <div class="walk-inner">
@@ -283,7 +283,7 @@
           </div></div>
         </div>
       </div>
-
+ 
       <div class="walk-card reveal">
         <div class="walk-side ws-gold"></div>
         <div class="walk-inner">
@@ -300,7 +300,7 @@
           </div></div>
         </div>
       </div>
-
+ 
       <div class="walk-card reveal">
         <div class="walk-side ws-pink"></div>
         <div class="walk-inner">
@@ -317,13 +317,13 @@
           </div></div>
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- BEACHES -->
 <section class="sec" id="beaches">
   <div class="container">
@@ -332,7 +332,7 @@
     <div id="beachesNote" class="season-note reveal"></div>
     <p class="sec-sub reveal">Sydney's beaches are world-famous for good reason. Always swim between the red and yellow flags — no exceptions.</p>
     <div class="grid-3">
-
+ 
       <div class="card reveal" data-season-warn="winter">
         <div class="card-bar bar-teal"></div>
         <div class="card-body">
@@ -346,7 +346,7 @@
           </div></div>
         </div>
       </div>
-
+ 
       <div class="card reveal" data-season-warn="winter">
         <div class="card-bar bar-gold"></div>
         <div class="card-body">
@@ -360,7 +360,7 @@
           </div></div>
         </div>
       </div>
-
+ 
       <div class="card reveal">
         <div class="card-bar bar-purple"></div>
         <div class="card-body">
@@ -374,7 +374,7 @@
           </div></div>
         </div>
       </div>
-
+ 
       <div class="card reveal">
         <div class="card-bar bar-teal"></div>
         <div class="card-body">
@@ -388,7 +388,7 @@
           </div></div>
         </div>
       </div>
-
+ 
       <div class="card reveal">
         <div class="card-bar bar-pink"></div>
         <div class="card-body">
@@ -402,13 +402,13 @@
           </div></div>
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- CAFÉS -->
 <section class="sec" id="cafes">
   <div class="container">
@@ -416,7 +416,7 @@
     <h2 class="sec-title reveal">Australia invented the<br><em>flat white.</em> Act accordingly.</h2>
     <p class="sec-sub reveal">Sydney's café culture is genuinely world-class. Always order a flat white first — strong espresso with silky micro-foamed milk, no froth.</p>
     <div class="grid-3">
-
+ 
       <div class="card reveal"><div class="card-bar bar-teal"></div><div class="card-body">
         <span class="card-icon">🌱</span><div class="card-name">The Grounds of Alexandria</div>
         <div class="card-meta"><span>📍 7A/2 Huntley St, Alexandria</span><span>🕐 Daily from 7:00 AM</span></div>
@@ -427,7 +427,7 @@
           <div class="tip-box"><strong>💡 Tip:</strong> Don't skip whatever fresh pastry is on display. The garden is worth wandering even if you're just having coffee.</div>
         </div></div>
       </div></div>
-
+ 
       <div class="card reveal"><div class="card-bar bar-gold"></div><div class="card-body">
         <span class="card-icon">🥞</span><div class="card-name">bills, Darlinghurst</div>
         <div class="card-meta"><span>📍 433 Liverpool St, Darlinghurst</span><span>🕐 Daily 7:30 AM – 3:00 PM</span></div>
@@ -438,7 +438,7 @@
           <div class="tip-box"><strong>💡 Tip:</strong> Order the ricotta hotcakes. Non-negotiable. The scrambled eggs — impossibly creamy — are also a revelation.</div>
         </div></div>
       </div></div>
-
+ 
       <div class="card reveal"><div class="card-bar bar-pink"></div><div class="card-body">
         <span class="card-icon">🔬</span><div class="card-name">ONA Coffee, Marrickville</div>
         <div class="card-meta"><span>📍 171 Addison Rd, Marrickville</span><span>🕐 Weekdays 7 AM · Weekends 8 AM</span></div>
@@ -449,7 +449,7 @@
           <div class="tip-box"><strong>💡 Tip:</strong> Ask the barista about the seasonal single-origin filter. Inner West line train from the city. Absolutely worth the trip.</div>
         </div></div>
       </div></div>
-
+ 
       <div class="card reveal"><div class="card-bar bar-purple"></div><div class="card-body">
         <span class="card-icon">🫖</span><div class="card-name">Brewmance, Crows Nest</div>
         <div class="card-meta"><span>📍 56 Willoughby Rd, Crows Nest</span><span>🕐 Mon–Fri 6:30 AM–3 PM · Sat–Sun 7:30 AM–3 PM</span></div>
@@ -460,7 +460,7 @@
           <div class="tip-box"><strong>💡 Tip:</strong> Your default morning coffee stop for the two weeks. Gets busy 8–9 AM — arrive slightly before or after the rush.</div>
         </div></div>
       </div></div>
-
+ 
       <div class="card reveal"><div class="card-bar bar-teal"></div><div class="card-body">
         <span class="card-icon">🥐</span><div class="card-name">Flour &amp; Stone, Woolloomooloo</div>
         <div class="card-meta"><span>📍 53 Riley St, Woolloomooloo</span><span>🕐 Tue–Fri 7 AM–3 PM · Sat–Sun 8 AM–3 PM</span></div>
@@ -471,13 +471,13 @@
           <div class="tip-box"><strong>💡 Tip:</strong> Arrive early — the best items are gone by 10 AM. The lamington is the signature. Short walk from Kings Cross station.</div>
         </div></div>
       </div></div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- EXPERIENCES -->
 <section class="sec" id="experiences">
   <div class="container">
@@ -485,7 +485,7 @@
     <h2 class="sec-title reveal">Things you'll still be<br><em>talking about</em> at home.</h2>
     <p class="sec-sub reveal">Beyond the beach and the café — the experiences that make Sydney genuinely unforgettable.</p>
     <div class="grid-2">
-
+ 
       <div class="card reveal"><div class="card-bar bar-teal"></div><div class="card-body">
         <span class="card-icon">🎭</span><div class="card-name">Sydney Opera House</div>
         <div class="card-meta"><span>📍 Bennelong Point, Sydney</span><span>🚢 10-min ferry from Milsons Point · Tours daily</span></div>
@@ -496,7 +496,7 @@
           <div class="tip-box"><strong>💡 Tip:</strong> The most dramatic approach is by ferry from Milsons Point — 10 minutes, normal Opal fare. Arrive from the water for the full effect.</div>
         </div></div>
       </div></div>
-
+ 
       <div class="card reveal"><div class="card-bar bar-gold"></div><div class="card-body">
         <span class="card-icon">🦘</span><div class="card-name">Taronga Zoo</div>
         <div class="card-meta"><span>📍 Bradleys Head Rd, Mosman</span><span>🚢 12-min ferry from Circular Quay · Daily 9:30 AM–5 PM</span></div>
@@ -507,7 +507,7 @@
           <div class="tip-box"><strong>💡 Tip:</strong> Book the Koala Encounter the moment you land ($15 extra — it sells out). Take the cable car down from the zoo's upper entrance for the best harbour view.</div>
         </div></div>
       </div></div>
-
+ 
       <div class="card reveal"><div class="card-bar bar-pink"></div><div class="card-body">
         <span class="card-icon">🪨</span><div class="card-name">The Rocks &amp; Circular Quay</div>
         <div class="card-meta"><span>📍 The Rocks, Sydney NSW</span><span>🚢 Ferry from Milsons Point, or walk across Harbour Bridge</span></div>
@@ -518,7 +518,7 @@
           <div class="tip-box"><strong>💡 Tip:</strong> The Glenmore Hotel rooftop bar has the best Harbour Bridge view of any bar in Sydney. The Rocks Market runs Saturdays and Sundays.</div>
         </div></div>
       </div></div>
-
+ 
       <div class="card reveal"><div class="card-bar bar-purple"></div><div class="card-body">
         <span class="card-icon">🌸</span><div class="card-name">Royal Botanic Garden</div>
         <div class="card-meta"><span>📍 Mrs Macquaries Rd, Sydney · Free entry always</span><span>🚶 10-min walk from Circular Quay</span></div>
@@ -529,7 +529,7 @@
           <div class="tip-box"><strong>💡 Tip:</strong> Visit at dusk to see the flying foxes depart. It's one of Sydney's great free wildlife experiences and most visitors have no idea it happens.</div>
         </div></div>
       </div></div>
-
+ 
       <div class="card reveal"><div class="card-bar bar-teal"></div><div class="card-body">
         <span class="card-icon">🎡</span><div class="card-name">Luna Park Sydney</div>
         <div class="card-meta"><span>📍 1 Olympic Dr, Milsons Point · 5-min walk from the office</span><span>🕐 Fri–Sun from 10 AM (hours vary — check website)</span></div>
@@ -540,13 +540,13 @@
           <div class="tip-box"><strong>💡 Tip:</strong> Visit at night for the best atmosphere — the Bridge lit up behind the rides is unforgettable. Check lunaparksydney.com for current event nights and ride passes.</div>
         </div></div>
       </div></div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- TIPS -->
 <section class="sec" id="tips">
   <div class="container">
@@ -567,21 +567,21 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- IMMERSION PROGRAM -->
 <section class="immersion-section" id="immersion">
   <div class="container">
     <div class="sec-label reveal">For Immersion Program Participants</div>
     <h2 class="sec-title reveal">Your <em>arrival guide,</em><br>all in one place.</h2>
     <p class="sec-sub reveal">Everything you need to know before you land — accommodation, getting around, the office, and what to pack.</p>
-
+ 
     <div class="immersion-welcome reveal">
       <div class="immersion-welcome-emoji">👋</div>
       <p>Hi Resonators — <strong>we're so excited to have you joining us in Sydney!</strong> Your flights and accommodation are taken care of. Below is everything else you'll need to feel at home from day one.</p>
     </div>
-
+ 
     <div class="info-grid">
       <div class="info-card reveal">
         <div class="info-card-head"><div class="info-card-icon ico-gold">🏠</div><div class="info-card-title">Your Accommodation</div></div>
@@ -596,7 +596,7 @@
           <div class="info-card-note"><strong>💡</strong> Brewmance café — our favourite local coffee — is a short walk from the front door.</div>
         </div>
       </div>
-
+ 
       <div class="info-card reveal">
         <div class="info-card-head"><div class="info-card-icon ico-teal">🏢</div><div class="info-card-title">The Office</div></div>
         <div class="info-card-body">
@@ -610,7 +610,7 @@
           <div class="info-card-note"><strong>💡</strong> Luna Park is right next door at Milsons Point — perfect for an after-work visit.</div>
         </div>
       </div>
-
+ 
       <div class="info-card reveal">
         <div class="info-card-head"><div class="info-card-icon ico-teal">🚆</div><div class="info-card-title">Getting Around Sydney</div></div>
         <div class="info-card-body">
@@ -624,7 +624,7 @@
           <div class="info-card-note"><strong>💡</strong> Always tap on AND off — forgetting to tap off charges you the maximum fare.</div>
         </div>
       </div>
-
+ 
       <div class="info-card reveal">
         <div class="info-card-head"><div class="info-card-icon ico-gold">💵</div><div class="info-card-title">Meals &amp; Daily Allowance</div></div>
         <div class="info-card-body">
@@ -636,7 +636,7 @@
           </ul>
         </div>
       </div>
-
+ 
       <div class="info-card reveal">
         <div class="info-card-head"><div class="info-card-icon ico-purple">💻</div><div class="info-card-title">Work Laptop</div></div>
         <div class="info-card-body">
@@ -647,7 +647,7 @@
           </ul>
         </div>
       </div>
-
+ 
       <div class="info-card reveal">
         <div class="info-card-head"><div class="info-card-icon ico-pink">✈️</div><div class="info-card-title">Your Flight</div></div>
         <div class="info-card-body">
@@ -660,7 +660,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- What to Pack -->
     <div class="pack-card reveal">
       <div class="pack-card-head">
@@ -710,15 +710,15 @@
         </div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <footer>
   <p>Prepared with care for the <strong>Resonate Head Office Immersion Program</strong> &nbsp;·&nbsp; North Sydney, Australia</p>
   <p style="margin-top:8px;opacity:.6;">Have an extraordinary time. The city is yours. 🦘 🌉 🌊</p>
 </footer>
-
+ 
 <script>
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const SEASONS = {
@@ -727,7 +727,7 @@ const SEASONS = {
   winter:{ months:[6,7,8], name:'Winter', emoji:'🌧️', pillClass:'winter', tagStyle:'background:rgba(116,76,162,.2);color:#C8A8E0;', heading:"You're visiting in <em>mild winter.</em>", body:"Sydney winters are mild by world standards — <strong>rarely below 8°C</strong> — but cool enough that beach swimming is limited to the brave. The upside: no crowds, and June–August is <strong>whale migration season</strong> along the coast. The coastal walks are stunning in winter light.", chips:['🌡️ <strong>12–18°C</strong> daytime','🐋 Whale watching season!','🧥 Layers essential','🎭 Great for Opera House & culture'], beachNote:{type:'cool',text:'🥶 Too cold for most beach swimmers — but coastal walks, ocean pools, and viewpoints are stunning year-round.'}, walkNote:{type:'great',text:'🥇 Winter is stunning for walks — cool, clear skies, and completely crowd-free.'} },
   spring:{ months:[9,10], name:'Spring', emoji:'🌸', pillClass:'spring', tagStyle:'background:rgba(158,31,100,.2);color:#E890B8;', heading:"You're visiting in <em>blooming spring.</em>", body:'Spring is spectacular in Sydney — warming up fast, with <strong>Jacaranda trees turning the city purple</strong> in November. Temperatures rise from 18°C to 26°C. Beach season is kicking back off, coastal walks are excellent, and the city feels fresh and energetic.', chips:['🌡️ <strong>18–26°C</strong> daytime','🌸 Jacarandas bloom in Nov','🌊 Ocean warming up','⚡ Afternoon storms possible'], beachNote:{type:'good',text:'🌊 Beach season warming up nicely — great conditions, manageable crowds.'}, walkNote:{type:'great',text:'🌸 Excellent walking conditions — wildflowers on clifftops, warming temperatures.'} },
 };
-
+ 
 function getSeason(months){
   const c={};
   for(const[k,s]of Object.entries(SEASONS)) c[k]=months.filter(m=>s.months.includes(m)).length;
@@ -740,9 +740,9 @@ function getRange(s,e){
   while(true){r.push(c);if(c===e)break;c=(c+1)%12;if(r.length>12)break;}
   return r;
 }
-
+ 
 let startM=null,endM=null;
-
+ 
 function updateUI(){
   const range=getRange(startM,endM);
   document.querySelectorAll('.month-btn').forEach(btn=>{
@@ -761,14 +761,14 @@ function updateUI(){
   const key=getSeason(range.length?range:[startM]);
   const s=SEASONS[key];
   const label=(endM!==null&&endM!==startM)?`${MONTHS[startM]} – ${MONTHS[endM]}`:MONTHS[startM];
-
+ 
   const pill=document.getElementById('seasonPill');
   pill.className=`season-pill ${s.pillClass}`;
   pill.innerHTML=`${s.emoji} &nbsp; ${label} &nbsp;·&nbsp; ${s.name} in Sydney`;
   const res=document.getElementById('seasonResult');
   res.style.display='block';
   res.style.animation='none'; void res.offsetWidth; res.style.animation='fadeIn .5s ease both';
-
+ 
   const banner=document.getElementById('contextBanner');
   banner.classList.add('visible');
   banner.setAttribute('data-emoji',s.emoji);
@@ -777,7 +777,7 @@ function updateUI(){
   document.getElementById('contextHeading').innerHTML=s.heading;
   document.getElementById('contextBody').innerHTML=s.body;
   document.getElementById('contextChips').innerHTML=s.chips.map(c=>`<div class="weather-chip">${c}</div>`).join('');
-
+ 
   const nc={great:{bg:'rgba(58,148,131,.2)',color:'#8FC7BB',border:'rgba(58,148,131,.35)'},good:{bg:'rgba(58,148,131,.15)',color:'#8FC7BB',border:'rgba(58,148,131,.3)'},warn:{bg:'rgba(245,197,24,.12)',color:'#F5C518',border:'rgba(245,197,24,.35)'},cool:{bg:'rgba(116,76,162,.15)',color:'#C8A8E0',border:'rgba(116,76,162,.35)'}};
   ['walks','beaches'].forEach(sec=>{
     const note=document.getElementById(sec+'Note');
@@ -789,12 +789,12 @@ function updateUI(){
       note.classList.add('visible');
     }
   });
-
+ 
   document.querySelectorAll('.card[data-season-warn]').forEach(card=>{
     card.classList.toggle('dimmed',card.dataset.seasonWarn===key);
   });
 }
-
+ 
 document.querySelectorAll('.month-btn').forEach(btn=>{
   btn.addEventListener('click',()=>{
     const m=parseInt(btn.dataset.month);
@@ -804,7 +804,7 @@ document.querySelectorAll('.month-btn').forEach(btn=>{
     updateUI();
   });
 });
-
+ 
 function toggleCard(btn){
   const full=btn.nextElementSibling;
   const isOpen=full.classList.contains('open');
@@ -812,7 +812,7 @@ function toggleCard(btn){
   btn.classList.toggle('open',!isOpen);
   btn.innerHTML=isOpen?'Read more <span class="arr">↓</span>':'Show less <span class="arr">↓</span>';
 }
-
+ 
 const els=document.querySelectorAll('.reveal');
 const io=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
