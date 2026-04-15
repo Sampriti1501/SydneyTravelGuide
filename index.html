@@ -154,7 +154,7 @@
   .immersion-welcome p { font-size:15px; color:rgba(255,255,255,.7); line-height:1.85; font-weight:300; }
   .immersion-welcome p strong { color:var(--gold); font-weight:600; }
  
-  .info-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .info-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
   .info-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.09); border-radius:18px; overflow:hidden; transition:border-color .2s,transform .2s; }
   .info-card:hover { border-color:rgba(255,255,255,.18); transform:translateY(-3px); }
   .info-card-head { padding:18px 20px 14px; display:flex; align-items:center; gap:12px; border-bottom:1px solid rgba(255,255,255,.07); }
@@ -193,7 +193,6 @@
   .reveal.in { opacity:1; transform:none; }
  
   /* RESPONSIVE */
-  @media (max-width:1000px) { .info-grid { grid-template-columns:repeat(2,1fr); } }
   @media (max-width:720px) {
     .container { padding:0 20px; }
     section.sec, .immersion-section { padding:70px 0; }
@@ -584,20 +583,6 @@
  
     <div class="info-grid">
       <div class="info-card reveal">
-        <div class="info-card-head"><div class="info-card-icon ico-gold">🏠</div><div class="info-card-title">Your Accommodation</div></div>
-        <div class="info-card-body">
-          <ul>
-            <li><strong>138 Ernest St, Crows Nest NSW 2065</strong></li>
-            <li>21-min walk to North Sydney train station</li>
-            <li>In the heart of Crows Nest village — cafés, restaurants, and shops on your doorstep</li>
-            <li>Check-in from <strong>3:00 PM</strong> — drop your bags and explore beforehand</li>
-            <li>2-min walk to bus stops on the main road</li>
-          </ul>
-          <div class="info-card-note"><strong>💡</strong> Brewmance café — our favourite local coffee — is a short walk from the front door.</div>
-        </div>
-      </div>
- 
-      <div class="info-card reveal">
         <div class="info-card-head"><div class="info-card-icon ico-teal">🏢</div><div class="info-card-title">The Office</div></div>
         <div class="info-card-body">
           <ul>
@@ -648,10 +633,10 @@
         </div>
       </div>
  
-      <div class="info-card reveal">
+      <div class="info-card reveal" style="grid-column:1/-1;">
         <div class="info-card-head"><div class="info-card-icon ico-pink">✈️</div><div class="info-card-title">Your Flight</div></div>
         <div class="info-card-body">
-          <ul>
+          <ul style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px 32px;">
             <li>Flight documents sent to your <strong>work email</strong> — check all details immediately</li>
             <li>Some airlines have <strong>no in-flight entertainment</strong> — bring something to watch</li>
             <li>Planes get cold on night flights — <strong>bring a light blanket</strong></li>
